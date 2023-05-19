@@ -1,0 +1,11 @@
+MYSQL Dockerizado:
+
+docker network create proyecto
+
+docker pull mysql:5.7
+
+docker run --name mysql-container -e MYSQL_ROOT_PASSWORD=usuario -e MYSQL_DATABASE=usuario -e MYSQL_USER=usuario -e MYSQL_PASSWORD=usuario -p 3307:3306 -d mysql:5.7
+
+docker network connect proyecto mysql-container
+
+mvn package -Pdocker (compila con los parametros definidos en el 2º properties para que funcione con el docker network)

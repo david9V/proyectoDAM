@@ -1,6 +1,6 @@
 package com.vilches.proyectovilches.service;
 
-import com.vilches.proyectovilches.model.Producto;
+import com.vilches.proyectovilches.controller.model.Producto;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
 package com.vilches.proyectovilches.controller;
 
-import com.vilches.proyectovilches.model.Producto;
+import com.vilches.proyectovilches.controller.model.Producto;
 import com.vilches.proyectovilches.service.ProductoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

@@ -1,4 +1,4 @@
-package com.vilches.proyectovilches.model;
+package com.vilches.proyectovilches.controller.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
