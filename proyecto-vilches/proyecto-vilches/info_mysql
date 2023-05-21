@@ -1,13 +1,7 @@
-MYSQL Dockerizado:
+Dockerizado:
 
 docker network create proyecto
-
-docker pull mysql:5.7
-docker run --name mysql-container -e MYSQL_ROOT_PASSWORD=usuario -e MYSQL_DATABASE=usuario -e MYSQL_USER=usuario -e MYSQL_PASSWORD=usuario -p 3307:3306 -d mysql:5.7
-docker network connect proyecto mysql-container
-
-
-docker pull postgresq
+docker pull postgres
 docker run -d --name postgres-container -p 5432:5432 -e POSTGRES_USER=usuario -e POSTGRES_PASSWORD=usuario -e POSTGRES_DB=proyecto --network=proyecto postgres
 docker run --name api-container -p 8080:8080 -itd --network=proyecto -e SPRING_DATASOURCE_URL=jdbc:postgresql://postgres-container:5432/proyecto  david9v/proyecto:4
 
